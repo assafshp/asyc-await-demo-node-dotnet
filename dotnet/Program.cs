@@ -7,12 +7,10 @@ namespace dotnet
 {
     class Program
     {
-        
-
         static async Task Demo() {
-            Console.WriteLine("started");
-            await Task.Delay(1500);
-            Console.WriteLine("ended");
+            Console.WriteLine("Demo started");
+            Task.Delay(3000);
+            Console.WriteLine("Demo ended");
         }
 
         static void Main(string[] args)
