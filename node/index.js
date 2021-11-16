@@ -1,3 +1,5 @@
+require('log-timestamp');
+
 (async function main(){
     console.log('main function started');
     await sleep();
@@ -11,6 +13,6 @@ async function timeout(ms) {
     }, ms));
 }
 async function sleep() {
-    return timeout(1000);
+    return timeout(3000);
 }
 
